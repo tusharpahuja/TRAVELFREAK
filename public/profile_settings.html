@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+	<meta charset="utf-8">
+	<title>Contact Us !</title>
+	<link href="css/font-awesome.css" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/gallery.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+</head>
+<body>
+	<div class="top">
+		<div class="top-left">
+			<ul class="top-one">
+				<li id="first"><a href="" >+918588040053</a></li>
+				<li class="end"><a href="" >travel.freak@anywhere.com</a></li>
+			</ul>
+		</div>
+		<div class="top-right">
+			<ul class="top-two">
+				<li><a href="facebook.com">Facebook</a></li>
+				<li><a href="google.com">google</a></li>
+				<li><a href="twitter.com">twitter</a></li>
+				<li><a href="linkedin.com">linkedin</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content" style="height: 15%;">
+		<div class="content-left">
+			<ul class="content-one">
+				<li><a href="home.html">TRAVELFREAK</a></li>
+			</ul>
+		</div>
+		<div class="content-right">
+			<ul class="content-two">
+				<li><a href="home.html">Home</a></li>
+				<li style="margin-top: -0.4em;margin-right:-0.4em;">
+					<div class="drop2">
+						<div class="dropbtn2" >&nbsp;Tickets</div>
+						<div class="dropdown-content2">
+							<a href="profile_settings.php">Airplane</a>
+							<a href="account_settings.php">Train</a>
+							<a href="account_settings.php">Bus</a>
+						</div>
+					</div>
+				</li>
+				<li><a href="google.com">Hotels</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="twitter.com">TravelDiaries</a></li>
+				<li style="margin-top: -0.4em;margin-right:-0.4em;">
+					<div class="drop">
+						<div class="dropbtn" >&nbsp;Settings</div>
+						<div class="dropdown-content">
+							<a href="account_settings.html">Logout</a>
+							<a href="profile_settings.html">Profile Settings</a>				
+							<div style="margin-top: -0.4em;margin-right:-0.4em;">
+								<div class="drop1">
+								<div class="dropbtn1" >&nbsp;Account Settings</div>
+									<div class="dropdown-content1">
+										<a href="change_password.html">Change Password</a>
+										<a href="account_settings.html">Delete Account</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="layout_contact_us">
+		<div>
+			<h2 style="font-size: 60px;text-align: center;color: black;font-family: 'Pacifico', cursive;">Profile Settings</h2>
+		</div>
+		<div class="queries" style="color: black; margin-left: 30%;">
+			<div class="queries_content">
+				<form  action="profile_settings.html" method='POST' enctype="multipart/form-data" style="color: black;"> 
+						<p> 
+							<label for="username" class="uname" data-icon="u" > Username :</label>&nbsp;
+							<input id="name" name="new_username" type="text" placeholder="mynewusername" style="height: 1em;padding: 1em;width: 24em;"/>
+						</p>
+						<p> 
+							<label for="location" class="Location" data-icon="e" > Location :</label>&nbsp;&nbsp;&nbsp;&nbsp;
+							<input id="location" name="location" type="text" placeholder="mylocation" style="height: 1em;padding: 1em;width: 24em;"/> 
+						</p>
+						<p> 
+							<label for="Bio" class="Bio" data-icon="e" > Bio :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input id="bio" name="bio" type="text" placeholder="mybio" style="height: 1em;padding: 1em;width: 24em;"/> 
+						</p>
+						<p> 
+							<label for="Birthday" class="Birthday" data-icon="e" > Birthday :</label>&nbsp;&nbsp;&nbsp;&nbsp;
+							<input id="birthday" name="bday"  type="date" placeholder="mybirthday" style="height: 1em;padding: 1em;width: 24em;"/> 
+						</p>
+						<p class="sign up button" align="center"> 
+							<input type="submit" name="save_changes" value="Save Changes">
+						</p>
+						<p align="center">
+							<input type="file" name="file"  />
+						</p>
+						<p class="sign up button" align="center"> 
+							<input type="submit" name="pupload" class="button" value="Upload" />
+						</p>
+					</form>
+			</div>
+		</div>
+	</div>
+	<div class="about">
+		<div class="add">
+			<div class="about_head">Address</div>
+			<p>
+				Cyber City<br>
+				Phase IV, Gurgaon<br>
+				Phone : +01244085085<br>
+				Email : travel.freak@anywhere.com<br>
+			</p>
+		</div>
+		<div class="nav">
+			<div class="about_head">Navigation</div>
+			<p>
+				<a href="about_us.html">About</a><br>
+				<a href="">Follow</a><br>
+				<a href="">Gallery</a><br>
+				<a href="contact_us.html">Contact</a><br>
+			</p>
+		</div>
+		<div class="follow">
+			<div class="about_head">Follow</div>
+			<p>
+				<a href="facebook.com">Facebook</a><br>
+				<a href="google.com">Google</a><br>
+				<a href="twitter.com">Twitter</a><br>
+				<a href="linkedin.com">Linkedin</a><br>
+			</p>
+		</div>
+		<div class="newsletter">
+			<div class="about_head">Newsletter</div>
+			<p>
+				<form>
+					<input type="email" name="email" placeholder="Enter your email here" style=" height: 2.5em; width: 20em;" required="required"></input>
+					<input type="submit" name="submit" value="Subscribe" style="margin-top: 1em;padding: 0.8em;width: 10em;" ></input>
+				</form>
+			</p>
+		</div>
+		<div class="footer" style="color: grey;">
+			&copy; 2016 Travel Freak | All Rights Reserved | 
+		</div>
+	</div>
+</body>
+</html> 
