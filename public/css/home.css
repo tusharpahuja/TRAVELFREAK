@@ -7,6 +7,7 @@ html,body{
 
 .top{
 	margin: 0% 5%;
+	position: relative;
 }
 
 .top-one{
@@ -75,6 +76,16 @@ html,body{
 	padding: 0;
 	border-top: 1px solid white;
 	border-bottom: 1px solid white;
+
+}
+
+#arr{
+	float: right;
+	margin-right: 20%;
+	margin-top: -27%;
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
 }
 
 .content-one{
@@ -94,12 +105,17 @@ html,body{
 	text-decoration: none;
 }
 
+.content-one a:hover{
+	color: #fd5c63;
+}
+
 .content-left {
 	float: left;
 }
 
 .content-two{
 	list-style-type: none;
+	margin-left: -2%;
 }
 
 .content-two li{
@@ -221,7 +237,7 @@ html,body{
 .news{
 	clear: left;
 	color: black;
-	height: 90%;
+	height: 100%;
 	width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
@@ -267,6 +283,7 @@ html,body{
 	margin-left: 5%;
 	margin-right: 5%;
 	padding-top: 20px;
+	position: relative;
 	background-color: white;
 	border-top: 1px solid white;
 	border-bottom: 1px solid white;
