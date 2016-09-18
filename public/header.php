@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/gallery1.css">
 	<link rel="stylesheet" type="text/css" href="css/about.css">
 	<link rel="stylesheet" type="text/css" href="css/special.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<script type="text/javascript">
 		var count = 1;
 		var total = 10;

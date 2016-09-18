@@ -35,12 +35,28 @@
 <html>
 <head>
 	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="css/style11.css">
+	
 </head>
 <body>
-	<form action="login.php" method="post">
-		<input type="text" name="username" value=""></input>
-		<input type="password" name="password" value=""></input>
-		<input type="submit" name="submit" value="Submit"></input>
+<b>
+<div class="login">
+<center>
+<div class="text"> 
+	<font size="7">Login</font>
+	<form method="POST" action="login.php">
+	<table>
+	<tr><td>Username<td><input type="text" name="username"></tr><br>
+	<tr><td>Password<td><input type="password" name="password"></tr><br>
+	</table>
+	<br>
+
+	<input type="submit" name="Login" onclick="verify()"> &nbsp&nbsp&nbsp   <input type="reset" name="Reset">
 	</form>
+</div>
+</center>
+</div>
+</b>
+
 </body>
 </html>

@@ -63,49 +63,32 @@ if (isset($_POST['submit']))
 ?>
 
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html>
 <head>
-    <title>Signup</title>
-    <script src="js/jquery.min.js"></script>
-    <link href="css/login.css" rel="stylesheet" type="text/css" media="all"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="../favicon.ico"> 
+<meta charset="utf-8">
+<title>Registration</title>
+<link rel="stylesheet" href="css/signup1.css" />
 </head>
 <body>
-    <div class="header">
-        <div class="header-main">
-         <h1>Sign up !</h1>
-         <div class="header-bottom">
-            <div class="header-right w3agile">
-
-                <div class="header-left-bottom agileinfo">
-
-                   <form action="signup.php" method="post" autocomplete="on">
-                    <input type="text" name="name" placeholder="myname" required />
-                    <span style="color: red;"><?php echo "$error_in_name"?></span>
-                    <input type="email" name="email" placeholder="myemail" required />
-                    <input type="text" name="username" placeholder="myusername" required />
-                    <span style="color: red;"><?php echo "$error_in_username"?></span>
-                    <input type="password" name="password" placeholder="password" required />
-                    <span style="color: red;"><?php echo "$error_in_password"?></span>
-                    <input type="password" name="confirm_password" placeholder="confirm_password"  required />
-                    <span style="color: red;"><?php echo "$error_in_password"?></span>
-                    <input type="submit" name="submit" value="Sign Up">
-                </form> 
-                <div class="header-left-top">
-                    <div class="sign-up"> <h2>or</h2> </div>
-                </div>
-                <div class="header-social wthree">
-                    <a href="LOGIN.php" class="face" style="text-align: center;"><h5>LOGIN</h5></a>
-                    <a href="about_us.html" class="twitt" style="text-align: center;"><h5>About Us</h5></a>
-                </div>
-            </div>
-        </div>
-
-    </div>
+<div class="signup">
+<div class="text">
+<h1 align=center><b>Registration</b></h1>
+<form name="registration" action="" method="post">
+<pre>
+<font face="Segoe UI">
+Name: 	<input type="text" name="name" placeholder="First Name"> 
+Username:	<input type="text" name="username" placeholder="Username" required /><br>
+Email:	 	<input type="email" name="email" placeholder="Email" required /><br>
+Password: 	<input type="password" name="password" placeholder="Password" required /><br>
+Confirm_Password: 	<input type="password" name="confirm_password" placeholder="Password" required /><br>
+Date Of Birth:	<input type="date" name="dob"><br>
+Address:	
+			<textarea name="address" rows=5 cols='15'>Your Address Here...</textarea>
+</font>
+</pre>
+<input type="submit" name="submit" value="Register" />
+</form>
+</div>
 </div>
 </body>
 </html>

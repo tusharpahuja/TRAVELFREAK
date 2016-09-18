@@ -6,7 +6,7 @@
 
 <?php
 	if(!logged_in())
-    	redirect_to("login.php");
+   		redirect_to("login.php");
 ?> 
 
 <!DOCTYPE html>
