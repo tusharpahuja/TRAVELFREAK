@@ -12,8 +12,8 @@
 			<div class="about_head">Navigation</div>
 			<p>
 				<a href="about_us.php">About</a><br>
-				<a href="">Follow</a><br>
-				<a href="">Gallery</a><br>
+				<a href="about_us.php">Follow</a><br>
+				<a href="gallery.php">Gallery</a><br>
 				<a href="contact_us.php">Contact</a><br>
 			</p>
 		</div>
@@ -36,7 +36,7 @@
 			</p>
 		</div>
 		<div class="footer" style="color: grey;">
-			&copy; 2016 Travel Freak | All Rights Reserved | 
+			&copy; 2017 Travel Freak | All Rights Reserved | 
 		</div>
 	</div>
 </body>

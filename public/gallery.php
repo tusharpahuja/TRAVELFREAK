@@ -1,15 +1,6 @@
 <?php
 	include("header.php");
-	include("../includes/database_connection.php");
-	include("../includes/functions.php");
-	include("../includes/session.php");
 ?>
-
-<?php
-	if(!logged_in())
-    	redirect_to("login.php");
-?> 
-
 	<div class="layout">
 		<div>
 			<h2 style="font-size: 60px;text-align: center;color: black;">Our Gallery</h2>

@@ -2,7 +2,7 @@
         $DB_SERVER="localhost";
         $DB_USER="root";
         $DB_PASS="techno2480";
-        $DB_NAME="favour.me";
+        $DB_NAME="travelfreak";
 
     //Create a database connection
         $connection = mysqli_connect($DB_SERVER,$DB_USER,$DB_PASS,$DB_NAME);

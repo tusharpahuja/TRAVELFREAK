@@ -4,29 +4,37 @@ include("../includes/functions.php");
 include("../includes/session.php");
 ?>
 
-<?php 
-	if(!logged_in()){
-		redirect_to("login.php");
-	} 
+<?php if(!logged_in())
+
+{
+	redirect_to("index.php");
+} 
 ?>
-
 <?php
-	$error_deletion = "";
-	$username = $_SESSION['username'];
-	$saltstring = '@!';
-	$username .= $saltstring;
-	if(isset($_POST['submit'])){
-		$query = "DELETE FROM user_details WHERE username = '$username'";
-		$result = mysqli_query($connection,$query);
-		if($result && mysqli_affected_rows($connection) == 1){
-			destroySession();
-			redirect_to('login.php');
-		}
-		else{
-			echo "Deletion failed";
-		}
-	}
+global $error_in_deleting; 
+if(isset($_POST['submit']))
+{
+	$current_user = $_SESSION["username"];
+	echo "$current_user";
+	$salt_string="@!";
+	$current_user.=$salt_string;
 
+	$error_in_deleting="";
+	$query = "DELETE FROM user_details WHERE username = '$current_user' LIMIT 1";
+	$result = mysqli_query($connection, $query);
+
+	if ($result && mysqli_affected_rows($connection) == 1) 
+	{
+		session_start();
+		redirect_to("index.php");
+	} 
+	else 
+	{
+
+		$error_in_deleting="User deletion failed";
+		echo "$error_in_deleting";
+	}
+}
 ?>
 
 <!doctype html>

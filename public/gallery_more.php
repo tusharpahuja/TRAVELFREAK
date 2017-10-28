@@ -1,14 +1,6 @@
 <?php
 	include("header.php");
-	include("../includes/database_connection.php");
-	include("../includes/functions.php");
-	include("../includes/session.php");
 ?>
-
-<?php
-	if(!logged_in())
-    	redirect_to("login.php");
-?> 
 
 	<div class="extra">
 		<div class="extra_head">

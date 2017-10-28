@@ -10,7 +10,7 @@
 	width: 80%;
 	position:absolute;
 	z-index: 2;
-	display:none;
+	display:block;
 	margin-left: 10%;
 	margin-top: -60%;
 	margin-right: 20%;

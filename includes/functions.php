@@ -42,6 +42,7 @@
          //validation of username
         function valid_username($username,$connection)        
         {
+            global $error_in_username;
             $salt_string="@!";
             $username.=$salt_string;
             $query="SELECT username FROM user_details WHERE username='$username'";
@@ -53,6 +54,7 @@
             }
             else
             {
+                $error_in_username="Username already taken.";
                 return 0;
             }
         }
@@ -319,7 +321,7 @@
                 $query = "UPDATE user_details SET username = '$new_username' WHERE username = '$current_username' LIMIT 1";
                 $result = mysqli_query($connection, $query);
 
-                if($result )
+                if($result)
                     return true;
                 else
                     return false;
@@ -348,7 +350,6 @@
             else
                 return true;
         }
-
 
         //update birthday of user
         function update_birthday($current_username,$bday,$connection)

@@ -1,15 +1,6 @@
 <?php
 	include("header.php");
-	include("../includes/database_connection.php");
-	include("../includes/functions.php");
-	include("../includes/session.php");
 ?>
-
-<?php
-	if(!logged_in())
-    	redirect_to("login.php");
-?> 
-
 	<div class="layout_contact_us">
 		<div>
 			<h2 style="font-size: 60px;text-align: center;color: black;font-family: 'Pacifico', cursive;">Contact Us</h2>
@@ -25,7 +16,7 @@
 			<div class="reach_us"><a href="gmail.com">travel_query@complaint.com</a></div>
 			<div class="reach_us"><b>Head Office:</b> Cyber City. Phase IV Gurgaon. 122001</div>
 		</div>
-		<div class="mail">
+		<div class="mail" style="background-color:lightgrey;border-radius:20px;">
 			<div class="mail_head">
 				Send us a message
 			</div>
@@ -35,8 +26,8 @@
 					<input type="email" name="email" class="input1" value="" placeholder="E-mail" style="width:34em; height:1em;padding: 1em;margin-bottom: 1.5em;"></input><br>
 					<input type="text" name="number" class="input1" value="" placeholder="Telephone" required="required" style="width:34em; height:1em;padding: 1em;margin-bottom: 1.5em;"></input><br>
 					<!--<input type="text" name="message" class="input2" value="" placeholder="Message or Query" style="width:34em; height:10em;padding-left: 1em;padding-top: 1em;margin-bottom: 1.5em;"></input><br>-->
-					<textarea rows="10" cols="64" placeholder="Message or query" style="padding-left: 1em;padding-top: 1em;font-family: Arial;" required="required"></textarea>
-					<input type="submit" value="Submit"></input>
+					<textarea rows="5" cols="64" placeholder="Message or query" style="padding-left: 1em;padding-top: 1em;font-family: Arial;" required="required"></textarea>
+					<input type="submit" value="Submit" align="center"></input>
 				</form>
 			</div>
 		</div>

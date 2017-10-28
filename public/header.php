@@ -8,7 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="css/gallery1.css">
 	<link rel="stylesheet" type="text/css" href="css/about.css">
 	<link rel="stylesheet" type="text/css" href="css/special.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<script type="text/javascript">
 		var count = 1;
 		var total = 10;
@@ -34,7 +33,7 @@
 	</script>
 </head>
 <body>
-	<div class="top">
+	<div class="top" >
 		<div class="top-left">
 			<ul class="top-one">
 				<li id="first"><a href="" >+918588040053</a></li>
@@ -63,15 +62,22 @@
 					<div class="drop2">
 						<div class="dropbtn2" >&nbsp;Tickets</div>
 						<div class="dropdown-content2">
-							<a href="profile_settings.php">Airplane</a>
-							<a href="account_settings.php">Train</a>
-							<a href="account_settings.php">Bus</a>
+							<a href="bookflight.php">Airplane</a>
+							<a href="bookrail.php">Train</a>
+							<a href="bookbus.php">Bus</a>
 						</div>
 					</div>
 				</li>
-				<li><a href="google.com">Hotels</a></li>
 				<li><a href="gallery.php">Gallery</a></li>
-				<li><a href="twitter.com">TravelDiaries</a></li>
+				<li style="margin-top: -0.4em;margin-right:-0.4em;">
+					<div class="drop2">
+						<div class="dropbtn2" >&nbsp;TravelDiaries</div>
+						<div class="dropdown-content2">
+							<a href="blogpost.php">Post A Blog</a>
+							<a href="blog.php">Blog Section</a>
+						</div>
+					</div>
+					<li><a href="profile.php">Profile</a></li>
 				<li style="margin-top: -0.4em;margin-right:-0.4em;">
 					<div class="drop">
 						<div class="dropbtn" >&nbsp;Settings</div>
