@@ -1,6 +1,6 @@
 <?php include("header.php"); ?>
 <?php 
-	$connection = mysqli_connect('localhost', 'root', 'techno2480','travelfreak');
+	$connection = mysqli_connect('localhost', 'root', 'root','travelfreak');
 	if (!$connection){
 	 die("Database Connection Failed" . mysqli_error());
 	}
