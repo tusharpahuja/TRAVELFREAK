@@ -16,7 +16,7 @@
           ['City', 'Votes', { role: "style" }]
 
 		    <?php
-				$con=mysqli_connect("localhost","root","techno2480","travelfreak");
+				$con=mysqli_connect("localhost","root","root","travelfreak");
 				if(!$con){
 					echo "Database is not connected";
 				}

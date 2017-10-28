@@ -60,7 +60,7 @@ include("../includes/database_connection.php");
 			$table = $_POST['source'];
 			$dest = $_POST['destination'];
 			$dd = $_POST['departure'];
-			$db = mysqli_connect("localhost",  "root", "techno2480","travelfreak") or die ('I cannot connect to the database because: ' . mysqli_error());
+			$db = mysqli_connect("localhost",  "root", "root","travelfreak") or die ('I cannot connect to the database because: ' . mysqli_error());
 			$mydb=mysqli_select_db($db,"travelfreak");
 			$sql="SELECT * FROM $table WHERE destination = '$dest' and dept_date = '$dd'" ;
 			$result=mysqli_query($db,$sql);

@@ -263,7 +263,7 @@ $bio = chop($row['bio'],'@!');
 						</tr>
 					</table>
 					<?php
-					$db = mysqli_connect("localhost",  "root", "techno2480","travelfreak") or die ('I cannot connect to the database because: ' . mysql_error());
+					$db = mysqli_connect("localhost",  "root", "root","travelfreak") or die ('I cannot connect to the database because: ' . mysql_error());
 					$mydb=mysqli_select_db($db,"travelfreak");
 					$sql="SELECT * FROM `final` WHERE user_id = '$current_user_id'" ;
 					$result=mysqli_query($connection,$sql);
